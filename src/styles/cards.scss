@@ -1,0 +1,21 @@
+@import 'cards/cards.css';
+
+.playingCards {
+  & *, & *::before, & *::after {
+    box-sizing: content-box;
+  }
+  .card {
+    -moz-box-shadow: 1px 1px 2px #333;
+    -webkit-box-shadow: 1px 1px 2px #333;
+    box-shadow: 1px 1px 2px #333;
+    &.back {
+      border-color: #980606;
+      background-image:
+              radial-gradient(
+                              circle closest-side,
+                              #ff0000,
+                              #b10808
+              );
+    }
+  }
+}
