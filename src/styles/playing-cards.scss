@@ -1,4 +1,4 @@
-@import 'cards/cards.css';
+@import 'playing-cards/cards.css';
 
 .playingCards {
   & *, & *::before, & *::after {
@@ -8,6 +8,8 @@
     -moz-box-shadow: 1px 1px 2px #333;
     -webkit-box-shadow: 1px 1px 2px #333;
     box-shadow: 1px 1px 2px #333;
+    width: 4em;
+    height: 5.5em;
     &.back {
       border-color: #980606;
       background-image:

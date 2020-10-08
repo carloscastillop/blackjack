@@ -1,5 +1,53 @@
 @import "../styles/general.module.scss";
+
 .App {
-    border: solid 1px red;
-    background-color: yellow;
+  border: solid 1px red;
+  height: 100%;
+  background-color: #16703B;
+
+  .deck {
+
+    .cardDeck {
+      box-sizing: border-box;
+      background-color: rgba(0,0,0,0.2);
+      padding: $spacer;
+
+      &.dealer {
+
+      }
+
+      &.player {
+
+      }
+
+      & *, & *::before, & *::after {
+        box-sizing: border-box;
+      }
+
+      [class*="col-"] {
+        position: relative;
+
+        .hand {
+          border: solid 1px magenta;
+          margin: 0;
+        }
+
+        .badge {
+          position: absolute;
+          right: -15px;
+          top: 0px;
+          padding: 10px;
+          background-color: rgba(52, 58, 64, 0.9) !important;
+          z-index: 5;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
 }
